@@ -54,7 +54,7 @@ public class WebSecurityConfig {
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
             );
     }
-    @Bean // HABILITANDO ACESSAR O H2-DATABASE NA
+    @Bean // HABILITANDO ACESSAR O H2-DATABASE NA WEB
     public ServletRegistrationBean h2ServletRegistration() {
     ServletRegistrationBean registrationBean = new ServletRegistrationBean(new WebServlet());
     registrationBean.addUrlMappings("/h2-console/*");
